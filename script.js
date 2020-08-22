@@ -10,7 +10,7 @@ function getHorario() {
 }
 
 function atualizaImagem() {
-  var horario = 12;
+  var horario = 9;
   horarioDoDia.innerHTML = `Agora são: ${horario} horas`;
 
   if (horario >= 6 && horario < 12) {

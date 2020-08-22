@@ -1,5 +1,16 @@
-body {
+.blue {
   background: rgb(10, 106, 231);
+}
+
+.black {
+  background: rgb(0, 0, 0);
+}
+
+.orange {
+  background: rgb(241, 138, 3);
+}
+
+body {
   font: normal 15pt Arial;
 }
 

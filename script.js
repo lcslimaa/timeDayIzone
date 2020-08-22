@@ -1,4 +1,5 @@
 const imagemSrc = document.getElementById("imagem");
+const bodybody = document.getElementById("bodybody");
 const horarioDoDia = document.getElementById("horarioDoDia");
 const style = document.getElementById("style");
 
@@ -9,17 +10,17 @@ function getHorario() {
 }
 
 function atualizaImagem() {
-  var horario = getHorario();
+  var horario = 12;
   horarioDoDia.innerHTML = `Agora são: ${horario} horas`;
 
   if (horario >= 6 && horario < 12) {
     imagemSrc.src = "images/bomdia.jpg";
   } else if (horario >= 12 && horario < 18) {
     imagemSrc.src = "images/boatarde.jpg";
-    style.href = "style/style2.css";
+    bodybody.classList.add("orange");
   } else {
     imagemSrc.src = "images/boanoite.jpg";
-    style.href = "style/style3.css";
+    bodybody.classList.add("black");
   }
 }
 
